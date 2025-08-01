@@ -1,7 +1,7 @@
 import "./env";
 import logger from "./config/logger";
 import { getDatabase, initDatabase, initQueryBuilder } from "./config/db";
-import { createServer } from "http";
+import { createServer } from "https"; // Changed from 'http' to 'https'
 import { initWebSocket } from "./ws";
 import { getCache, initCache } from "@/config/cache";
 import { insertAreaToDatabase, isAreaDataExist } from "@/area-csv/insert-database";

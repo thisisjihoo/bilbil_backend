@@ -76,7 +76,7 @@ export async function GetPostsService(req, res) {
         params.size = Number(size);
     }
 
-    if (area) {
+    if (typeof area === 'string') {
         params.area = area.split(",").map(Number)
             .filter(n => !isNaN(n));
     }
